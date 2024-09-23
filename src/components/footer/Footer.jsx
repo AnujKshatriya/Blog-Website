@@ -27,17 +27,17 @@ const Footer = () => {
       <div className={styles.links}>
         <div className={styles.list}>
           <span className={styles.listTitle}>Links</span>
-          <Link href="/">Homepage</Link>
+          <Link href="/">Home</Link>
           <Link href="/">Blog</Link>
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Tags</span>
-          <Link href="/">Style</Link>
-          <Link href="/">Fashion</Link>
-          <Link href="/">Coding</Link>
-          <Link href="/">Travel</Link>
+          <Link href="/blog?cat=nextjs">Coding</Link>
+          <Link href="/blog?cat=web3">Web3</Link>
+          <Link href="/blog?cat=nextjs">NextJS</Link>
+          <Link href="/blog?cat=dsa">DSA</Link>
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Social</span>

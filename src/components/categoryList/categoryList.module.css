@@ -1,37 +1,73 @@
-.categoryList {
-    margin-top: 35px;
-    margin-bottom: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.container {
+}
+
+.title {
+  margin: 50px 0px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+  width: 15%;
+  height: 80px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.category.dsa {
+  background-color: #57c4ff31;
+}
+
+.category.mern {
+  background-color: #da85c731;
+}
+
+.category.icpc {
+  background-color: #7fb88133;
+}
+
+.category.nextjs {
+  background-color: #ff795736;
+}
+
+.category.web3 {
+  background-color: #ffb04f45;
+}
+
+.category.coding {
+  background-color: #5e4fff31;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .category {
+    width: 20%;
   }
-  
-  .categoryItem {
-    padding: 10px 25px;
-    border-radius: 10px;
-    font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .category {
+    width: 25%;
   }
-  
-  .categoryItem.style {
-    background-color: #57c4ff31;
+}
+@media screen and (max-width: 768px) {
+  .category {
+    width: 45%;
   }
-  
-  .categoryItem.fashion {
-    background-color: #da85c731;
+}
+@media screen and (max-width: 640px) {
+  .category {
+    width: 100%;
   }
-  
-  .categoryItem.food {
-    background-color: #7fb88133;
-  }
-  
-  .categoryItem.travel {
-    background-color: #ff795736;
-  }
-  
-  .categoryItem.culture {
-    background-color: #ffb04f45;
-  }
-  
-  .categoryItem.coding {
-    background-color: #5e4fff31;
-  }
+}
