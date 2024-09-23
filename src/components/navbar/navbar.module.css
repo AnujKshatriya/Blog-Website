@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+  }
+  
+  .social {
+    display: flex;
+    gap: 10px;
+    flex : 1;
+  }
+  
+  .logo {
+    flex: 1;
+    text-align: start;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    flex : 1;
+  }
+
+  .img{
+    border-radius: 50%;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .logo {
+      font-size: 32px;
+    }
+    .links {
+      font-size: 18px;
+      gap: 15px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .social {
+      display: none;
+    }
+    .logo {
+      text-align: left;
+    }
+    .links{
+      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .logo {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .links{
+      justify-content: flex-end;
+    }
+    .link {
+      display: none;
+    }
+  }

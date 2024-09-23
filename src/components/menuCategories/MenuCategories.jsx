@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import styles from "./categoryList.module.css";
+import styles from "./menuCategories.module.css";
 
-const CategoryList = () => {
+const MenuCategories = () => {
   return (
     <div className={styles.categoryList}>
       <Link
@@ -30,4 +30,4 @@ const CategoryList = () => {
   );
 };
 
-export default CategoryList;
+export default MenuCategories;
