@@ -1,9 +1,13 @@
+"use client"
+
 import React from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
 import bgImg from "../../../public/blog.jpg"
+import { useRouter } from 'next/navigation';
 
 const Featured = () => {
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -21,7 +25,7 @@ const Featured = () => {
             laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
             quisquam! Harum unde sit culpa debitis.
           </p>
-          <button className={styles.button}>Read More</button>
+          <button onClick={()=>router.push("/about")} className={styles.button}>Read More</button>
         </div>
       </div>
     </div>
