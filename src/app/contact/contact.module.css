@@ -68,7 +68,7 @@
     padding: 15px 15px;
     border-radius: 5px;
     background: var(--softBg);
-    color: #c3c3c3;
+    color: var(--textColor);
     outline: none;
 }
 .contact-right textarea{
@@ -76,7 +76,7 @@
     padding: 15px 15px;
     border-radius: 5px;
     background: var(--softBg);
-    color: #c3c3c3;
+    color: var(--textColor);
     outline: none;
     resize: none;
 }
